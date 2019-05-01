@@ -27,7 +27,6 @@ class Persona(models.Model):
         """
         Cadena para representar el objeto Persona (en el sitio de Admin, etc.)
         """
-        return self.nombre
-        return self.apellidos
-        return self.edad
-        return self.fecha
+        nombre_completo = self.nombre+" "+self.apellidos
+        return nombre_completo
+        
