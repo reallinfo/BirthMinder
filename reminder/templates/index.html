@@ -1,0 +1,17 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<h1>BirthMinder</h1>
+
+  <p>Bienvenido a <em>BirthMinder</em>, una sencilla aplicación en Django que te permite no solo almacenar
+  la fecha de cumpleaños de las personas que más te importan, sino que además te permite automatizar el envío de las felicitaciones, tanto preestablecidas, como propias</p>
+
+<h2>Total de personas en el sistema</h2>
+
+  <p>EL numero de personas cuyos cumpleaños ya no van a ser olvidados es:</p>
+  <ul>
+    <li><strong>Personas guardadas:</strong> {{ num_personas }}</li>
+    
+  </ul>
+
+{% endblock %}
